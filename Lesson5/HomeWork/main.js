@@ -102,24 +102,68 @@ window.onload = function () {
   // }
 
   // 10) Сделайте функцию getDigitsSum (digit - это цифра), которая параметром принимает целое число и возвращает сумму его цифр.
-  let getDigitsSum = (digit) => {
-    let sum = 0,
-      str = String(digit);
-    for (let i = 0; i < str.length; i += 1) {
-      sum = sum + Number(str[i]);
-    }
-    return sum;
-  };
+//   let getDigitsSum = (digit) => {
+//     let sum = 0,
+//       str = String(digit);
+//     for (let i = 0; i < str.length; i += 1) {
+//       sum = sum + Number(str[i]);
+//     }
+//     return sum;
+//   };
   // console.log(getDigitsSum(56));
 
   // 11)  Найдите все года от 1 до 2020, сумма цифр которых равна 13. Для этого используйте вспомогательную функцию getDigitsSum из предыдущей задачи.
-  let array = [];
-  let y = 0;
-  for (let i = 1; i <= 2020; i++) {
-    if (getDigitsSum(i) === 13) {
-      array[y] = i;
-      y++;
-    }
-  }
-  console.log(array);
+//   let array = [];
+//   let y = 0;
+//   for (let i = 1; i <= 2020; i++) {
+//     if (getDigitsSum(i) === 13) {
+//       array[y] = i;
+//       y++;
+//     }
+//   }
+//   console.log(array);
+  
+    // 12)  Сделайте функцию isEven() (even - это четный), которая параметром принимает целое число и проверяет: четное оно или нет.
+  // Если четное - пусть функция возвращает true, если нечетное - false.
+  // let isEven = (num) => {
+  //   if (num % 2 === 0) {
+  //     return true;
+  //   } else {
+  //     return false;
+  //   }
+  // };
+  // console.log(isEven(22));
+  // 2 вариант
+  // function isEven(number) {
+  //   return number % 2 === 0;
+  // }
+  // 13)  Дан массив с целыми числами. Создайте из него новый массив, где останутся лежать только четные из этих чисел.
+  // Для этого используйте вспомогательную функцию isEven из предыдущей задачи.
+  //   let arr = [1, 2, 3, 5, 11, 25, -1, 0, 10],
+  //     arrEven = [],
+  //     a = 0;
+  //   for (let i = 0; i <= arr.length - 1; i++) {
+  //     if (isEven(arr[i])) {
+  //       arrEven[a] = arr[i];
+  //       a++;
+  //     }
+  //   }
+  //   console.log(arrEven);
+  // 14)  Сделайте функцию getDivisors, которая параметром принимает число и возвращает массив его делителей (чисел, на которое делится данное число).
+  // let getDivisors = (num) => {
+  //   let arrDivider = [],
+  //     b = 0;
+  //   for (let i = 1; i <= num; i++) {
+  //     if (num % i === 0) {
+  //       arrDivider[b] = i;
+  //       b++;
+  //     }
+  //   }
+  //   return arrDivider;
+  // };
+  // console.log(getDivisors(24));
+  // console.log(getDivisors(24));
+
+  // 15) Дан массив с числами. Выведите последовательно его элементы.
+
 };
