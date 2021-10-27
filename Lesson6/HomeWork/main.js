@@ -162,15 +162,67 @@
 // который сравнивает подстроку str1 с окончанием исходной строки str
 // и определяет заканчивается ли строка символами подстроки.
 
-const str = "Каждый охотник желает знать";
-const str1 = "скрипт";
-const str2 = "знать";
+// const trap = (str, str1, str2) => {
+//   if (str.endsWith(str1)) {
+//     return true;
+//   } else {
+//     return false;
+//   }
+// };
 
-String.prototype.endsWith = function (substring) {
-  let arr = this.split(" ");
-  if (arr[arr.length - 1] === substring) {
-    return true;
-  } else {
-    return false;
-  }
-};
+// console.log(trap("Каждый охотник желает знать", "скрипт", "знать"));
+
+// 16. Подстрока до/после указанного символа. Напишите функцию getSubstr(str, char, pos), которая
+// возвращает часть строки, расположенную после или до указанного
+// символа char в зависимости от параметра pos.
+
+// const getSubstr = (str, char, pos) => {
+//   let prog = str.indexOf(char);
+//   if (pos === "отрезок") {
+//     return str.slice(0, prog);
+//   } else {
+//     return str.slice(prog + 1);
+//   }
+// };
+
+// console.log(getSubstr("Астрономия — Наука о небесных телах", "ах", "отрезок"));
+
+// 17. Вставить подстроку в указанную позицию строки. Напишите функцию insert(str, substr, pos), которая вставляет
+// подстроку substr в указанную позицию pos строки str. По умолчанию подстрока вставляется в начало строки.
+
+// 1 вариант
+// const insert = (str, substr, pos) => {
+//   let result = [str.slice(0, pos), substr, str.slice(pos)].join("");
+//   return result;
+// };
+
+// console.log(insert("один два", "три", 2));
+
+// 2 вариант
+// const insert = (str, substr, pos) => {
+//   let newArr = str.split("");
+//   console.log(newArr); // разбиваем строку на массив букв
+//   newArr.splice(pos, 0, substr); // добавляем на указанную позицию второй аргумент (по умолчанию 0)
+//   return newArr.join(""); // собираем массив
+// };
+// console.log(insert("один два", "три", 2));
+
+// 18. Ограничить длину строки. Напишите функцию limitStr(str, n, symb), которая обрезает строку, если она длиннее
+//  указанного количества символов n. Усеченная строка должна заканчиваться троеточием «...»
+//  (если не задан параметр symb) или заданным символом symb.
+
+// const limitStr = (str, n, symb) => {
+//   if (str.length <= n) {
+//     return str + symb;
+//   }
+//   str = str.slice(0, n) + "...";
+//   return str;
+// };
+
+// console.log(limitStr("один два", 9, "$"));
+
+// 19. Количество вхождений символа в строке. Напишите функцию count(str, stringsearch), которая
+// возвращает количество символов stringsearch в строке str.
+
+const count = (str, stringsearch) => {};
+console.log(count("Астрономия это наука о небесных объектах", "о"));
