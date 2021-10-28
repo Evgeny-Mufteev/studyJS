@@ -251,8 +251,16 @@
 // 23. Удалить лишние слова из строки. Напишите функцию cutString(str, n), которая удаляет
 // лишние слова из строки str, оставив в ней n слов.
 
-const cutString = (str, n) => {
-  return str.split(" ").splice(0, n).join(" ");
-};
+// const cutString = (str, n) => {
+//   return str.split(" ").splice(0, n).join(" ");
+// };
 
-console.log(cutString("Сила тяжести приложена к центру масс тела", 2));
+// console.log(cutString("Сила тяжести приложена к центру масс тела", 2));
+
+// 24. Найти слово в строке. Напишите функцию findWord(word, str), которая проверяет,
+// существует ли в строке str слова word.
+
+// const findWord = (str, word) => {
+//   return str.includes(word);
+// };
+// console.log(findWord("abc def ghi jkl mno pqr stu", "pqr"));
