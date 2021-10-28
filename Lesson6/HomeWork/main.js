@@ -224,5 +224,35 @@
 // 19. Количество вхождений символа в строке. Напишите функцию count(str, stringsearch), которая
 // возвращает количество символов stringsearch в строке str.
 
-const count = (str, stringsearch) => {};
-console.log(count("Астрономия это наука о небесных объектах", "о"));
+// const count = (str, stringsearch) => {
+//   newStr = str.split(" ").join("");
+//   arrStr = newStr.split("");
+//   let counter = 0;
+//   for (let i = 0; i < arrStr.length; i += 1) {
+//     if (arrStr[i] === stringsearch) {
+//       counter++;
+//     }
+//   }
+//   return counter;
+// };
+
+// console.log(count("Астрономия это наука о небесных объектах", "о"));
+
+// 21. Удалить лишние пробелы из строки. Напишите функцию strip(str), которая удаляет
+// все лишние пробелы из строки str.
+
+// const strip = (str) => {
+//   newStr = str.trim();
+//   return newStr.replace(/\s+/g, " ");
+// };
+
+// console.log(strip("    Max is a good      boy     "));
+
+// 23. Удалить лишние слова из строки. Напишите функцию cutString(str, n), которая удаляет
+// лишние слова из строки str, оставив в ней n слов.
+
+const cutString = (str, n) => {
+  return str.split(" ").splice(0, n).join(" ");
+};
+
+console.log(cutString("Сила тяжести приложена к центру масс тела", 2));
